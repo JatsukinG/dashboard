@@ -82,11 +82,16 @@ body{
     background: #eee;
     border-right: 4px solid darkmagenta;
     cursor: pointer;
+    color: darkmagenta;
 }
 
 .optionActive{
     background: #eee;
     border-right: 4px solid darkmagenta;
+}
+
+.optionActive div p{
+    color: darkmagenta;
 }
 
 .options-list li div{
@@ -136,10 +141,12 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-    padding: 10px 20px;
+    display: grid;
+    background: red;
 }
 
 .searchBox{
+    grid-column: span 6;
     width: 100%;
     height: 50px;
     background: white;
@@ -188,4 +195,21 @@ body{
     margin-left: 20px;
     width: 30px;
     border-radius: 15px;
+}
+
+.section{
+    background: yellow;
+    border-radius: 10px;
+}
+
+.section1{
+    grid-column: span 4;
+}
+
+.section2{
+    grid-column: span 1;
+}
+
+.section3{
+    grid-column: span 1;
 }
